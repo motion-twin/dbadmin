@@ -463,6 +463,7 @@ class TableInfos {
 				case DData: null;
 				case DEnum(_): "'0'";
 				}
+				if( v == "0" && def == "'0'" ) def = "0";
 				if( v != def && !OLD_COMPAT )
 					return null;
 			case "NULL":
